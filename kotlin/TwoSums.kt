@@ -16,6 +16,7 @@ class TwoSums {
             if(map.containsKey(remain)){
                 result[0] = map.get(remain)!!
                 result[1] = i
+                //result = intArrayOf(map.get(remain)!!, i) -> alernartive for IntArray Assignment
                 break;
             }
             map.put(nums[i],i)
